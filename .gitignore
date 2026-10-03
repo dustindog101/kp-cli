@@ -1,0 +1,12 @@
+node_modules/
+.kp/
+.local/
+output/
+.playwright-mcp/
+.playwright-cli/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+coverage/

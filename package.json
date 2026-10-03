@@ -1,0 +1,47 @@
+{
+  "name": "kp-member-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial Kaiser Permanente member CLI for humans and agents",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "kp": "bin/kp.js"
+  },
+  "scripts": {
+    "start": "node bin/kp.js",
+    "test": "node --test",
+    "check": "tsc --noEmit",
+    "format": "prettier --write src bin test docs .github README.md CHANGELOG.md package.json tsconfig.json",
+    "format:check": "prettier --check src bin test docs .github README.md CHANGELOG.md package.json tsconfig.json"
+  },
+  "dependencies": {
+    "@napi-rs/keyring": "^2.1.0",
+    "commander": "^14.0.0",
+    "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "prettier": "^3.9.9",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustindog101/kp-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dustindog101/kp-cli/issues"
+  },
+  "homepage": "https://github.com/dustindog101/kp-cli#readme",
+  "files": [
+    "bin/",
+    "src/",
+    "docs/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
